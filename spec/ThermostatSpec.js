@@ -14,4 +14,32 @@ describe("Thermostat", function() {
     thermostat.down();
     expect(thermostat.temp).toEqual(19);
   });
+  it("will not go below 10", function () {
+    while(thermostat.temp > 10) {
+    thermostat.down(); 
+    };
+    thermostat.down(); 
+    expect(thermostat.temp).toEqual(10);
+  });  
+ describe("Power saving mode", function () {
+    it("starts in power saving mode", function () {
+    expect(thermostat.psm).toBe(true);
+    });
+   it("has a maximum temperature of 25", function () {
+    while(thermostat.temp < 25) {
+    thermostat.up(); 
+    };
+    thermostat.up(); 
+    expect(thermostat.temp).toEqual(25); 
+   });
+   it("can be turned off", function () {
+   thermostat.psmSwitch();
+   expect(thermostat.psm).toBe(false);
+   });
+   it("can be turned on", function () {
+   thermostat.psmSwitch();
+   thermostat.psmSwitch();
+   expect(thermostat.psm).toBe(true);
+   });
+ }); 
 });
