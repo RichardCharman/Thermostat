@@ -16,30 +16,43 @@ describe("Thermostat", function() {
   });
   it("will not go below 10", function () {
     while(thermostat.temp > 10) {
-    thermostat.down(); 
+      thermostat.down(); 
     };
     thermostat.down(); 
     expect(thermostat.temp).toEqual(10);
-  });  
- describe("Power saving mode", function () {
+  }); 
+  it("can be reset to 20", function () {
+    thermostat.up();
+    thermostat.restart();
+    expect(thermostat.temp).toEqual(20);
+  });
+  describe("Power saving mode", function () {
     it("starts in power saving mode", function () {
-    expect(thermostat.psm).toBe(true);
+      expect(thermostat.psm).toBe(true);
     });
-   it("has a maximum temperature of 25", function () {
-    while(thermostat.temp < 25) {
-    thermostat.up(); 
-    };
-    thermostat.up(); 
-    expect(thermostat.temp).toEqual(25); 
-   });
-   it("can be turned off", function () {
-   thermostat.psmSwitch();
-   expect(thermostat.psm).toBe(false);
-   });
-   it("can be turned on", function () {
-   thermostat.psmSwitch();
-   thermostat.psmSwitch();
-   expect(thermostat.psm).toBe(true);
-   });
- }); 
+    it("has a maximum temperature of 25", function () {
+      while(thermostat.temp < 25) {
+        thermostat.up(); 
+      };
+      thermostat.up(); 
+      expect(thermostat.temp).toEqual(25); 
+    });
+    it("can be turned off", function () {
+     thermostat.psmSwitch();
+     expect(thermostat.psm).toBe(false);
+    });
+    it("can be turned on", function () {
+     thermostat.psmSwitch();
+     thermostat.psmSwitch();
+     expect(thermostat.psm).toBe(true);
+    });
+    it("has a maximum temperature of 32 with psm off", function () {
+      thermostat.psmSwitch();
+      while(thermostat.temp < 32) {
+        thermostat.up(); 
+      };
+      thermostat.up(); 
+      expect(thermostat.temp).toEqual(32); 
+    }); 
+  }); 
 });
