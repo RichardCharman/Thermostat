@@ -3,20 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>Thermostat</title>
+  <link rel="stylesheet" href="stylesheet.css">
   <script type="text/javascript" src="src/Thermostat.js"></script>
   <script src="src/jquery.js"></script>
   <script src="jqapp.js"></script> 
 </head>
 <body>
-  <div style='width: 400px; border: 3px solid #93d628; padding: 10px; text-align:center; margin:0 auto; '>
-  <div id="temperature"><h1>Thermostat</h1></div>
-   <h1><p id="temp"></p></h1>
-  <div>
+  <div class="content">
+    <div class="header">
+      <div class="title">Thermostat</div>
+    </div>
+    <p></p>
+      
+    <div id="temp"></div>
+  <img id="temp" src="http://1.bp.blogspot.com/-OqHTDxFaqGE/VdOtJB6sGQI/AAAAAAAARQ0/VmYrJn-aIus/s1600/degreec.png" width="50">
+    <p></p>
+  <div id="controls">
   <button type="button" id="up" onclick="upClick()" > <img src="http://2.bp.blogspot.com/-LHU320AyUws/VdMGM802hMI/AAAAAAAARPg/CSxMjqI3aS0/s1600/temp%2Bup.png" width="50"> </button>
   <button type="button" id="down" onclick="downClick()" > <img src="http://1.bp.blogspot.com/-i3goavImM5A/VdMGMozxuDI/AAAAAAAARPc/jVO479NNiQg/s1600/temp%2Bdown.png" width="50"> </button>
     &nbsp; Power Saving Mode : <input type="checkbox" id="psmbox" onclick="psmCheck()" checked>
   </div>
-    <div><p><button type="button" id="reset" onclick="resetClick()" > RESET </button></p></div>
+    <div id="reset"><p><button type="button" id="reset" onclick="resetClick()" > RESET </button></p></div>
   </div>
 </body>
 </html>
