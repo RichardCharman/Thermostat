@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Thermostat</title>
+  <script type="text/javascript" src="src/Thermostat.js"></script>
+</head>
+<body>
+  <div style='width: 400px; border: 3px solid #93d628; padding: 10px; text-align:center; margin:0 auto; '>
+  <div id="temperature"><h1>Thermostat</h1></div>
+   <p id="temp"></p>
+  <script>
+    var therm = new Thermostat();
+    document.getElementById("temp").innerHTML = therm.temp;
+    function upClick() {
+      therm.up();
+      document.getElementById("temp").innerHTML = therm.temp;
+    };
+    function downClick() {
+      therm.down();
+      document.getElementById("temp").innerHTML = therm.temp;
+    };
+    function resetClick() {
+      therm.restart();
+      document.getElementById("temp").innerHTML = therm.temp;
+    };
+    function psmCheck() {
+      therm.psmSwitch();
+    };
+  </script>
+  <div>
+  <button type="button" onclick="upClick()" > <img src="http://2.bp.blogspot.com/-LHU320AyUws/VdMGM802hMI/AAAAAAAARPg/CSxMjqI3aS0/s1600/temp%2Bup.png" width="50"> </button>
+  <button type="button" onclick="downClick()" > <img src="http://1.bp.blogspot.com/-i3goavImM5A/VdMGMozxuDI/AAAAAAAARPc/jVO479NNiQg/s1600/temp%2Bdown.png" width="50"> </button>
+    &nbsp; Power Saving Mode : <input type="checkbox" onclick="psmCheck()" checked>
+  </div>
+    <div><p><button type="button" onclick="resetClick()" > RESET </button></p></div>
+  </div>
+</body>
+</html>
