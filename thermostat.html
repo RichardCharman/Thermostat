@@ -8,21 +8,25 @@
 <body>
   <div style='width: 400px; border: 3px solid #93d628; padding: 10px; text-align:center; margin:0 auto; '>
   <div id="temperature"><h1>Thermostat</h1></div>
-   <p id="temp"></p>
+   <h1><p id="temp"></p></h1>
   <script>
     var therm = new Thermostat();
     document.getElementById("temp").innerHTML = therm.temp;
+    document.getElementById("temp").style.color = therm.colour();
     function upClick() {
       therm.up();
       document.getElementById("temp").innerHTML = therm.temp;
+      document.getElementById("temp").style.color = therm.colour();
     };
     function downClick() {
       therm.down();
       document.getElementById("temp").innerHTML = therm.temp;
+      document.getElementById("temp").style.color = therm.colour();
     };
     function resetClick() {
       therm.restart();
       document.getElementById("temp").innerHTML = therm.temp;
+      document.getElementById("temp").style.color = therm.colour();
     };
     function psmCheck() {
       therm.psmSwitch();

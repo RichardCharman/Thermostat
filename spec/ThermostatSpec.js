@@ -55,4 +55,21 @@ describe("Thermostat", function() {
       expect(thermostat.temp).toEqual(32); 
     }); 
   }); 
+  describe("temperature colour is", function () {
+    it("green if temp less than 18", function () {
+      thermostat.down(); 
+      thermostat.down(); 
+      thermostat.down(); 
+      expect(thermostat.colour()).toEqual("green");
+    });
+    it("yellow if temp more than 17 less than 25", function () {
+      expect(thermostat.colour()).toEqual("orange");
+    });
+    it("red if temp is 25 or more", function () {
+      while(thermostat.temp < 25) {
+        thermostat.up(); 
+      };
+      expect(thermostat.colour()).toEqual("red");
+    });
+  });
 });

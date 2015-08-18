@@ -28,3 +28,12 @@ Thermostat.prototype.psmSwitch = function() {
 Thermostat.prototype.restart = function() {
   this.temp = 20;
 };
+Thermostat.prototype.colour = function() {
+  if (this.temp < 18) {
+    return "green"
+  } else if (this.temp < 25) {
+    return "orange"
+  } else {
+    return "red"
+  };
+};
