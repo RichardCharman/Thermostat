@@ -1,7 +1,7 @@
   var therm = new Thermostat(); 
    function showTherm() {
      $("#temp").text(therm.temp);
-     $("#temp").css("color", therm.colour());
+     $("#temp").css("color", therm.colour());    
    };
 $(document).ready(function() {
         showTherm();

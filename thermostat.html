@@ -10,20 +10,21 @@
 </head>
 <body>
   <div class="content">
-    <div class="header">
+    <div class="box">
       <div class="title">Thermostat</div>
     </div>
-    <p></p>
-      
-    <div id="temp"></div>
-  <img id="temp" src="http://1.bp.blogspot.com/-OqHTDxFaqGE/VdOtJB6sGQI/AAAAAAAARQ0/VmYrJn-aIus/s1600/degreec.png" width="50">
-    <p></p>
-  <div id="controls">
-  <button type="button" id="up" onclick="upClick()" > <img src="http://2.bp.blogspot.com/-LHU320AyUws/VdMGM802hMI/AAAAAAAARPg/CSxMjqI3aS0/s1600/temp%2Bup.png" width="50"> </button>
-  <button type="button" id="down" onclick="downClick()" > <img src="http://1.bp.blogspot.com/-i3goavImM5A/VdMGMozxuDI/AAAAAAAARPc/jVO479NNiQg/s1600/temp%2Bdown.png" width="50"> </button>
-    &nbsp; Power Saving Mode : <input type="checkbox" id="psmbox" onclick="psmCheck()" checked>
-  </div>
-    <div id="reset"><p><button type="button" id="reset" onclick="resetClick()" > RESET </button></p></div>
+    <div class="box">    
+      <div id="temp"></div>
+      <img class="degree" id="temp2" src="/public/images/degreec.png">
+    </div>
+    <div class="box">
+      <div id="controls">
+        <button type="button" id="up" onclick="upClick()" > <img src="/public/images/tempup.png"> </button>
+        <button type="button" id="down" onclick="downClick()" > <img src="/public/images/tempdown.png"> </button>
+        &nbsp; Power Saving Mode : <input type="checkbox" id="psmbox" onclick="psmCheck()" checked>
+      </div>
+    </div>
+    <div id="reset"><p><button type="button" id="reset" onclick="resetClick()" > RESET </button></p></div>   
   </div>
 </body>
 </html>

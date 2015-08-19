@@ -18,7 +18,7 @@ body {
   overflow: hidden;
 }
 
-.header {
+.box {
   display: inline-block;
 }
 
@@ -26,17 +26,34 @@ body {
 	font-size: 300%;
 }
 
-.tempdisplay {
-  width: 120px;
-  padding: 10px;
-  display: inline-block;
+img {
+  width: 60px;
+}
+
+img.degree {
+  width: 70px;
 }
 
 #temp {
   float: left;
-  margin: 20px;
+  margin: 10px;
+  padding-top: 10px;
   padding-bottom: 1000px;
   margin-bottom: -1000px;  
+  padding-left: 10px;
+	font-family: Arial Bold;
+	font-size: 450%;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+#temp2 {
+  float: left;
+  margin: 5px;
+  padding-top: 10px;
+  padding-bottom: 1000px;
+  margin-bottom: -1000px;  
+  padding-right: 20px;
 	font-family: Arial Bold;
 	font-size: 450%;
 	font-weight: 700;
@@ -44,5 +61,9 @@ body {
 }
 
 #controls {
+  padding-top: 10px;
+}
 
+#reset {
+  
 }
