@@ -64,6 +64,33 @@ img.degree {
   padding-top: 10px;
 }
 
-#reset {
-  
+#marginbox {
+  margin: 10px; 
+}
+
+#name {
+  float: left;
+  padding-left: 120px;
+  font-size: 150%;
+}
+
+#temperature {
+  float: left;
+  padding-left: 10px;
+  font-size: 150%;
+}
+
+.degrees_hidden {
+    visibility: hidden;
+}
+
+.degrees_show {
+  float: left;
+  padding-left: 4px;
+  font-size: 150%;
+}
+
+#city {
+  margin: 10px; 
+  font-size: 80%;
 }

@@ -7,6 +7,7 @@
   <script type="text/javascript" src="src/Thermostat.js"></script>
   <script src="src/jquery.js"></script>
   <script src="jqapp.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
   <div class="content">
@@ -24,7 +25,19 @@
         &nbsp; Power Saving Mode : <input type="checkbox" id="psmbox" onclick="psmCheck()" checked>
       </div>
     </div>
-    <div id="reset"><p><button type="button" id="reset" onclick="resetClick()" > RESET </button></p></div>   
+    <div id="marginbox"><button type="button" id="reset" onclick="resetClick()" > RESET </button></div>
+    <div id="box">Find Local Weather Details</div>
+    <div id="box">
+    <div id="city"> Enter Location: 
+        <input type="text" id="city_choice" />
+        <input type="submit" id="get_weather" />
+    </div>
+    <div id="box">
+      <div id="name"></div>
+      <div id="temperature"></div>
+      <div id="degrees" class="degrees_hidden"> &#8451 </div>
+    </div>
+  </div>
   </div>
 </body>
 </html>
