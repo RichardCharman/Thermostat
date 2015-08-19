@@ -66,18 +66,28 @@ img.degree {
 
 #marginbox {
   margin: 10px; 
+  padding-bottom: 10px;
+}
+
+#weatherbox {
+  width: 400px;
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 140%;
+  border-top: solid;
+  border-width: 5px;
+  border-color: #93d628; 
 }
 
 #name {
   float: left;
-  padding-left: 120px;
-  font-size: 150%;
+  font-size: 180%;
 }
 
 #temperature {
   float: left;
   padding-left: 10px;
-  font-size: 150%;
+  font-size: 180%;
 }
 
 .degrees_hidden {
@@ -87,10 +97,19 @@ img.degree {
 .degrees_show {
   float: left;
   padding-left: 4px;
-  font-size: 150%;
+  font-size: 180%;
 }
 
 #city {
   margin: 10px; 
   font-size: 80%;
+}
+
+#city_choice {
+  border-style: solid;
+  border-color: #93d628; 
+  background-color: #6d6c6c;
+  color: white;
+  font-family: monospace;
+  font-weight: 800;
 }

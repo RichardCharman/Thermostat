@@ -1,5 +1,7 @@
 Thermostat in Javascript
 
+![alt text](public/images/thermostatworking.jpg "Thermostat working at end of stage 6")
+
 
     Thermostat starts at 20 degrees
     You can increase the temp with the up button

@@ -26,13 +26,13 @@
       </div>
     </div>
     <div id="marginbox"><button type="button" id="reset" onclick="resetClick()" > RESET </button></div>
-    <div id="box">Find Local Weather Details</div>
-    <div id="box">
+    <div id="weatherbox">Find Local Weather Details</div>
+    <div class="box">
     <div id="city"> Enter Location: 
-        <input type="text" id="city_choice" />
-        <input type="submit" id="get_weather" />
+      <input type="text" id="city_choice" />
+      <button type="button" id="get_weather" onclick="get_weather"> Search </button>
     </div>
-    <div id="box">
+    <div class="box">
       <div id="name"></div>
       <div id="temperature"></div>
       <div id="degrees" class="degrees_hidden"> &#8451 </div>
