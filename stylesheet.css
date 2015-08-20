@@ -90,11 +90,11 @@ img.degree {
   font-size: 180%;
 }
 
-.degrees_hidden {
+.hidden {
     visibility: hidden;
 }
 
-.degrees_show {
+.show {
   float: left;
   padding-left: 4px;
   font-size: 180%;

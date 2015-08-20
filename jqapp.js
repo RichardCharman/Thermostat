@@ -9,7 +9,8 @@ var weatherAPI = function(cityName) {
        $('#name').html(cityJSON.name);
        $('#temperature').html(Math.round(cityJSON.main.temp));
        $('#degrees').removeClass();
-       $('#degrees').addClass("degrees_show");
+       $('#degrees').addClass("show");     
+       $('#condition').html(cityJSON.weather[0].main);             
     });
   };
 

@@ -1,6 +1,6 @@
 Thermostat in Javascript
 
-![alt text](public/images/thermostatworking.jpg "Thermostat working at end of stage 6")
+![alt text](public/images/thermexample.jpg "Thermostat working at end of stage 6")
 
 
     Thermostat starts at 20 degrees
@@ -12,3 +12,5 @@ Thermostat in Javascript
     Power saving mode is on by default
     You can reset the temperature to 20 by hitting the reset button
     The thermostat should colour the display based on energy usage - < 18 is green, < 25 is yellow, otherwise red
+
+Thermostat also includes an Open Weather API, which allows the user to input a location (town or city name) and returns the temperature and current weather conditions.
