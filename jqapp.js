@@ -5,12 +5,12 @@ function showTherm() {
 };
 
 var weatherAPI = function(cityName) {
-     $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=metric&APPID=b0aea1fc7fa650c8be747007e4f8e609", function(cityJSON) {
-       $('#name').html(cityJSON.name);
-       $('#temperature').html(Math.round(cityJSON.main.temp));
+     $.get("http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=metric&APPID=b0aea1fc7fa650c8be747007e4f8e609", function(city) {
+       $('#name').html(city.name);
+       $('#temperature').html(Math.round(city.main.temp));
        $('#degrees').removeClass();
        $('#degrees').addClass("show");     
-       $('#condition').html(cityJSON.weather[0].main);             
+       $('#condition').html(city.weather[0].main);             
     });
   };
 
