@@ -34,6 +34,6 @@ $(document).ready(function() {
       $('#get_weather').click(function() {
         var city = $('#city_choice').val();
         weatherAPI(city);
-        $('#city_choice').val('');
+        
       });
     });
