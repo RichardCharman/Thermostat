@@ -10,7 +10,7 @@ Thermostat.prototype.up = function() {
   } else {
     if(this.temp < 32){
       this.temp += 1;
-    };   
+    };
   };
 };
 Thermostat.prototype.down = function() {

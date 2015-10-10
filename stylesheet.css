@@ -1,19 +1,19 @@
 body {
-	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif; 
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
   font-size: 16px;
-	margin:0px 0px; 
+	margin:0px 0px;
   padding:0px;
 	text-align:center;
 }
 
 .content {
   background-color:#000000;
-  width: 400px; 
+  width: 400px;
   color: #ffffff;
   border-style: solid;
   border-width: 5px;
-  border-color: #93d628; 
-  padding: 10px; 
+  border-color: #93d628;
+  padding: 10px;
   margin:0 auto;
   overflow: hidden;
 }
@@ -39,7 +39,7 @@ img.degree {
   margin: 10px;
   padding-top: 10px;
   padding-bottom: 1000px;
-  margin-bottom: -1000px;  
+  margin-bottom: -1000px;
   padding-left: 10px;
 	font-family: Arial Bold;
 	font-size: 450%;
@@ -52,7 +52,7 @@ img.degree {
   margin: 5px;
   padding-top: 10px;
   padding-bottom: 1000px;
-  margin-bottom: -1000px;  
+  margin-bottom: -1000px;
   padding-right: 20px;
 	font-family: Arial Bold;
 	font-size: 450%;
@@ -65,7 +65,7 @@ img.degree {
 }
 
 #marginbox {
-  margin: 10px; 
+  margin: 10px;
   padding-bottom: 10px;
 }
 
@@ -76,7 +76,7 @@ img.degree {
   font-size: 140%;
   border-top: solid;
   border-width: 5px;
-  border-color: #93d628; 
+  border-color: #93d628;
 }
 
 #name {
@@ -101,13 +101,13 @@ img.degree {
 }
 
 #city {
-  margin: 10px; 
+  margin: 10px;
   font-size: 80%;
 }
 
 #city_choice {
   border-style: solid;
-  border-color: #93d628; 
+  border-color: #93d628
   background-color: #6d6c6c;
   color: white;
   font-family: monospace;
